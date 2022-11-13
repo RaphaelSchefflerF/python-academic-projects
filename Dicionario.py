@@ -76,7 +76,7 @@ def comparacao(media1,media2):
         return('Jackson Ganhou')
 
 
-#Principal
+#principal
 
 media1=media_nota1(lista_fabio)
 media2=media_nota1(lista_jackson)
