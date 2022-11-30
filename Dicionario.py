@@ -76,7 +76,7 @@ def comparacao(media1,media2):
         return('Jackson Ganhou')
 
 
-#principal
+#Principal
 
 media1=media_nota1(lista_fabio)
 media2=media_nota1(lista_jackson)
@@ -85,6 +85,88 @@ print(media1)
 print(media2)
 
 print(comparacao(media1,media2))
+
+#atividade
+
+def data(dia,mes,ano):
+    listaMes = ['janeiro', 'fevereiro',
+            'março','abril','maio',
+            'junho','julho', 'agosto',
+            'setembro', 'outubro',
+            'novembro', 'dezembro']
+    return f'Você nasceu em,'
+
+dia=int(input('Dia:'))
+mes=int(input('Mês:'))
+ano=int(input('Ano:'))
+
+data(dia,mes,ano)
+
+def principal():
+	frase = “gato e cachorro”
+	lista = frase.split(“ ”)
+	quantidade = 0
+	for item in lista:
+		if verifica_minuscula(item) == True and verifica_hifen(item)
+                quantidade = quantidade +1
+
+                
+def valida_frase(frase):
+    frase_tolkiens=frase.split(" ")
+    erros=0
+
+    print(frase_tolkiens)
+    tolkiens_validos=0
+
+    for tolkien in frase_tolkiens:
+        erros=0
+        for caracter in tolkien:
+            if caracter in "0123456789_" or caracter.isupper():
+                erros+=1
+                continue
+            if caracter in".!?,":
+                if caracter!=tolkien[-1]:
+                    erros+=1
+                    continue
+
+        if tolkien.count("-")>1 or tolkien[0]=="-" or tolkien[-1]=="-" or erros>0:
+            continue
+        else:
+            tolkiens_validos+=1
+
+    return tolkiens_validos
+
+frase = "!isto quase p0d3 -ha faca-me ha- 55 mamão! -Fim-"
+print(valida_frase(frase))
+
+def valida_frase(frase):
+    frase_tolkiens=frase.split(" ")
+    erros=0
+
+    print(frase_tolkiens)
+    tolkiens_validos=0
+
+    for tolkien in frase_tolkiens:
+        erros=0
+        for caracter in tolkien:
+            if caracter in "0123456789_" or caracter.isupper():
+                erros+=1
+                continue
+            if caracter in".!?," and caracter!=tolkien[-1]:
+                erros+=1
+                continue
+
+        if tolkien.count("-")>1 or tolkien[0]=="-" or tolkien[-1]=="-" or erros>0:
+            continue
+        else:
+            tolkiens_validos+=1
+
+    return tolkiens_validos
+
+
+
+frase = "!isto quase p0d3 -ha faca-me ha- 55 mamão! -Fim-"
+print(valida_frase(frase))
 
 '''
 
