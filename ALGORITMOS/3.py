@@ -1,0 +1,6 @@
+print('Atividade 4!')
+peso=float(input('peso:'))
+taxa=float(input('taxa:'))
+kilo=float(input('kilo:'))
+valor=float(input(peso*kilo-taxa))
+print('Valor:',valor)
